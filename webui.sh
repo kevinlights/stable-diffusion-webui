@@ -134,7 +134,7 @@ case "$gpu_info" in
         if [[ -z "${TORCH_COMMAND}" ]]
         then
             pyv="$(${python_cmd} -c 'import sys; print(f"{sys.version_info[0]}.{sys.version_info[1]:02d}")')"
-            # Using an old nightly compiled against rocm 5.2 for Navi1, see https://github.com/pytorch/pytorch/issues/106728#issuecomment-1749511711
+            # Using an old nightly compiled against rocm 5.2 for Navi1, see https://gh-proxy.com/https://github.com/pytorch/pytorch/issues/106728#issuecomment-1749511711
             if [[ $pyv == "3.8" ]]
             then
                 export TORCH_COMMAND="pip install https://download.pytorch.org/whl/nightly/rocm5.2/torch-2.0.0.dev20230209%2Brocm5.2-cp38-cp38-linux_x86_64.whl https://download.pytorch.org/whl/nightly/rocm5.2/torchvision-0.15.0.dev20230209%2Brocm5.2-cp38-cp38-linux_x86_64.whl"
@@ -201,7 +201,7 @@ else
     printf "\n%s\n" "${delimiter}"
     printf "Clone stable-diffusion-webui"
     printf "\n%s\n" "${delimiter}"
-    "${GIT}" clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "${clone_dir}"
+    "${GIT}" clone https://gh-proxy.com/https://github.com/AUTOMATIC1111/stable-diffusion-webui.git "${clone_dir}"
     cd "${clone_dir}"/ || { printf "\e[1m\e[31mERROR: Can't cd to %s/%s/, aborting...\e[0m" "${install_dir}" "${clone_dir}"; exit 1; }
 fi
 
@@ -280,6 +280,9 @@ prepare_tcmalloc() {
         fi
     fi
 }
+
+
+conda install libsqlite=3.48.0
 
 KEEP_GOING=1
 export SD_WEBUI_RESTART=tmp/restart

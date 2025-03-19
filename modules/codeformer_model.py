@@ -15,7 +15,7 @@ from modules import (
 
 logger = logging.getLogger(__name__)
 
-model_url = 'https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth'
+model_url = 'https://gh-proxy.com/https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth'
 model_download_name = 'codeformer-v0.1.0.pth'
 
 # used by e.g. postprocessing_codeformer.py

@@ -68,37 +68,37 @@ def get_realesrgan_models(scaler: UpscalerRealESRGAN):
     return [
         UpscalerData(
             name="R-ESRGAN General 4xV3",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
             scale=4,
             upscaler=scaler,
         ),
         UpscalerData(
             name="R-ESRGAN General WDN 4xV3",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-wdn-x4v3.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-wdn-x4v3.pth",
             scale=4,
             upscaler=scaler,
         ),
         UpscalerData(
             name="R-ESRGAN AnimeVideo",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth",
             scale=4,
             upscaler=scaler,
         ),
         UpscalerData(
             name="R-ESRGAN 4x+",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
             scale=4,
             upscaler=scaler,
         ),
         UpscalerData(
             name="R-ESRGAN 4x+ Anime6B",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth",
             scale=4,
             upscaler=scaler,
         ),
         UpscalerData(
             name="R-ESRGAN 2x+",
-            path="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth",
+            path="https://gh-proxy.com/https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth",
             scale=2,
             upscaler=scaler,
         ),

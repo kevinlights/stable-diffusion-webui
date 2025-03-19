@@ -301,10 +301,10 @@ def is_square(w, h):
 model_dir_opencv = os.path.join(paths_internal.models_path, 'opencv')
 if parse_version(cv2.__version__) >= parse_version('4.8'):
     model_file_path = os.path.join(model_dir_opencv, 'face_detection_yunet_2023mar.onnx')
-    model_url = 'https://github.com/opencv/opencv_zoo/blob/b6e370b10f641879a87890d44e42173077154a05/models/face_detection_yunet/face_detection_yunet_2023mar.onnx?raw=true'
+    model_url = 'https://gh-proxy.com/https://github.com/opencv/opencv_zoo/blob/b6e370b10f641879a87890d44e42173077154a05/models/face_detection_yunet/face_detection_yunet_2023mar.onnx?raw=true'
 else:
     model_file_path = os.path.join(model_dir_opencv, 'face_detection_yunet.onnx')
-    model_url = 'https://github.com/opencv/opencv_zoo/blob/91fb0290f50896f38a0ab1e558b74b16bc009428/models/face_detection_yunet/face_detection_yunet_2022mar.onnx?raw=true'
+    model_url = 'https://gh-proxy.com/https://github.com/opencv/opencv_zoo/blob/91fb0290f50896f38a0ab1e558b74b16bc009428/models/face_detection_yunet/face_detection_yunet_2022mar.onnx?raw=true'
 
 
 def download_and_cache_models():

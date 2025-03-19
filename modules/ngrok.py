@@ -11,7 +11,7 @@ def connect(token, port, options):
             token, username, password = token.split(':', 2)
             account = f"{username}:{password}"
 
-    # For all options see: https://github.com/ngrok/ngrok-py/blob/main/examples/ngrok-connect-full.py
+    # For all options see: https://gh-proxy.com/https://github.com/ngrok/ngrok-py/blob/main/examples/ngrok-connect-full.py
     if not options.get('authtoken_from_env'):
         options['authtoken'] = token
     if account:

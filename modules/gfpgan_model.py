@@ -15,7 +15,7 @@ from modules import (
 )
 
 logger = logging.getLogger(__name__)
-model_url = "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth"
+model_url = "https://gh-proxy.com/https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth"
 model_download_name = "GFPGANv1.4.pth"
 gfpgan_face_restorer: face_restoration.FaceRestoration | None = None
 

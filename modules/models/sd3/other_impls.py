@@ -376,7 +376,7 @@ class T5Attention(torch.nn.Module):
     def _relative_position_bucket(relative_position, bidirectional=True, num_buckets=32, max_distance=128):
         """
         Adapted from Mesh Tensorflow:
-        https://github.com/tensorflow/mesh/blob/0cb87fe07da627bf0b7e60475d59f95ed6b5be3d/mesh_tensorflow/transformer/transformer_layers.py#L593
+        https://gh-proxy.com/https://github.com/tensorflow/mesh/blob/0cb87fe07da627bf0b7e60475d59f95ed6b5be3d/mesh_tensorflow/transformer/transformer_layers.py#L593
 
         Translate relative position to a bucket number for relative attention. The relative position is defined as
         memory_position - query_position, i.e. the distance in tokens from the attending position to the attended-to

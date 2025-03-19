@@ -82,7 +82,7 @@ def on_ui_settings():
 
     options = {
         "hypertile_explanation": shared.OptionHTML("""
-    <a href='https://github.com/tfernd/HyperTile'>Hypertile</a> optimizes the self-attention layer within U-Net and VAE models,
+    <a href='https://gh-proxy.com/https://github.com/tfernd/HyperTile'>Hypertile</a> optimizes the self-attention layer within U-Net and VAE models,
     resulting in a reduction in computation time ranging from 1 to 4 times. The larger the generated image is, the greater the
     benefit.
     """),

@@ -67,7 +67,7 @@ def sha256(filename, title, use_addnet_hash=False):
 
 
 def addnet_hash_safetensors(b):
-    """kohya-ss hash for safetensors from https://github.com/kohya-ss/sd-scripts/blob/main/library/train_util.py"""
+    """kohya-ss hash for safetensors from https://gh-proxy.com/https://github.com/kohya-ss/sd-scripts/blob/main/library/train_util.py"""
     hash_sha256 = hashlib.sha256()
     blksize = 1024 * 1024
 

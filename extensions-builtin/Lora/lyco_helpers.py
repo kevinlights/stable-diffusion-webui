@@ -21,7 +21,7 @@ def rebuild_cp_decomposition(up, down, mid):
     return torch.einsum('n m k l, i n, m j -> i j k l', mid, up, down)
 
 
-# copied from https://github.com/KohakuBlueleaf/LyCORIS/blob/dev/lycoris/modules/lokr.py
+# copied from https://gh-proxy.com/https://github.com/KohakuBlueleaf/LyCORIS/blob/dev/lycoris/modules/lokr.py
 def factorization(dimension: int, factor:int=-1) -> tuple[int, int]:
     '''
     return a tuple of two value of input dimension decomposed by the number closest to factor

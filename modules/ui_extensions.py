@@ -125,7 +125,7 @@ def check_updates(id_task, disable_list):
 def make_commit_link(commit_hash, remote, text=None):
     if text is None:
         text = commit_hash[:8]
-    if remote.startswith("https://github.com/"):
+    if remote.startswith("https://gh-proxy.com/https://github.com/"):
         if remote.endswith(".git"):
             remote = remote[:-4]
         href = remote + "/commit/" + commit_hash

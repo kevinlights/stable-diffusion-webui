@@ -8,7 +8,7 @@ class ModuleTypeGLora(network.ModuleType):
 
         return None
 
-# adapted from https://github.com/KohakuBlueleaf/LyCORIS
+# adapted from https://gh-proxy.com/https://github.com/KohakuBlueleaf/LyCORIS
 class NetworkModuleGLora(network.NetworkModule):
     def __init__(self,  net: network.Network, weights: network.NetworkWeights):
         super().__init__(net, weights)

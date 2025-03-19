@@ -7,7 +7,7 @@ from modules.upscaler_utils import upscale_with_model
 class UpscalerESRGAN(Upscaler):
     def __init__(self, dirname):
         self.name = "ESRGAN"
-        self.model_url = "https://github.com/cszn/KAIR/releases/download/v1.0/ESRGAN.pth"
+        self.model_url = "https://gh-proxy.com/https://github.com/cszn/KAIR/releases/download/v1.0/ESRGAN.pth"
         self.model_name = "ESRGAN_4x"
         self.scalers = []
         self.user_path = dirname

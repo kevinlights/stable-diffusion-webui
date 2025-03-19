@@ -28,7 +28,7 @@ def torch_xpu_gc():
 has_xpu = check_for_xpu()
 
 
-# Arc GPU cannot allocate a single block larger than 4GB: https://github.com/intel/compute-runtime/issues/627
+# Arc GPU cannot allocate a single block larger than 4GB: https://gh-proxy.com/https://github.com/intel/compute-runtime/issues/627
 # Here we implement a slicing algorithm to split large batch size into smaller chunks,
 # so that SDPA of each chunk wouldn't require any allocation larger than ARC_SINGLE_ALLOCATION_LIMIT.
 # The heuristic limit (TOTAL_VRAM // 8) is tuned for Intel Arc A770 16G and Arc A750 8G,
@@ -107,7 +107,7 @@ if has_xpu:
         # torch.Generator supports "xpu" device since 2.1
         torch.Generator("xpu")
     except RuntimeError:
-        # W/A for https://github.com/intel/intel-extension-for-pytorch/issues/452: torch.Generator API doesn't support XPU device (for torch < 2.1)
+        # W/A for https://gh-proxy.com/https://github.com/intel/intel-extension-for-pytorch/issues/452: torch.Generator API doesn't support XPU device (for torch < 2.1)
         CondFunc('torch.Generator',
             lambda orig_func, device=None: torch.xpu.Generator(device),
             lambda orig_func, device=None: is_xpu_device(device))
